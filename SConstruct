@@ -2,7 +2,8 @@ from os import environ
 
 VariantDir('build/src', 'src', duplicate=0)
 VariantDir('build/lib', 'lib', duplicate=0)
-flags = ['-O3', '-march=native', '-std=c++14']
+# flags = ['-O3', '-march=native', '-std=c++1z']
+flags = ['-march=native', '-std=c++1z']
 
 env = Environment(ENV       = environ,
                   CXX       = 'clang++',
